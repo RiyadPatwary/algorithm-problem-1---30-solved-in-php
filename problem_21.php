@@ -24,21 +24,21 @@ if (isset($_POST["submit"])) {
 	$_counter = 0;//8
 	$_quotient = 0;
 
-	if ($_myNum_1 > $_myNum_2) {
+	if ($_myNum_1 >= $_myNum_2) {
 		$_largeNum = $_myNum_1;
 		$_smallNum = $_myNum_2;
 	}
 
-	if ($_myNum_1 < $_myNum_2) {
+	elseif ($_myNum_1 < $_myNum_2) {
 		$_largeNum = $_myNum_2;
 		$_smallNum = $_myNum_1;
 	}
 
-	elseif ($_myNum_1 == $_myNum_2) {
-		# code...
-		$_largeNum = $_myNum_1;
-		$_smallNum = $_myNum_2;
-	}
+//	elseif ($_myNum_1 == $_myNum_2) {
+//		# code...
+//		$_largeNum = $_myNum_1;
+//		$_smallNum = $_myNum_2;
+//	}
 
 	for ($i=$_largeNum; $_counter+$_smallNum <= $_largeNum ; $i--) {//0
 		$_counter = $_counter + $_smallNum;
